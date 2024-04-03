@@ -14,9 +14,11 @@ function App() {
   };
 
   const [invoiceData, setInvoiceData] = useState(null)
+  const [isLoading, setIsLoading] = useState(false);
 
   const invoiceParse = async () => {
     try {
+      setIsLoading(true);
       const fd = new FormData();
       fd.append('file', file);
       let response = await fetch('https://invoice-parser-demanual.vercel.app/parse_invoice/', { method: 'POST', body: fd })
@@ -25,6 +27,9 @@ function App() {
     }
     catch (err) {
       console.log(err);
+    }
+    finally {
+      setIsLoading(false); // Set loading state to false after fetch (whether it succeeds or fails)
     }
   }
 
@@ -53,7 +58,7 @@ function App() {
             </FileUploader>
             <div className='w-full flex justify-center items-center'>
               <button onClick={invoiceParse} disabled={file === null} className='font-mono text-lg border border-[#f9f9f9] disabled:border-gray-800 disabled:text-gray-800 p-2 rounded-lg cursor-pointer'>
-                <span>Process</span>
+                <span>{isLoading ? 'Processing' : 'Process'}</span>
               </button>
             </div>
           </div>
@@ -109,9 +114,8 @@ function App() {
               <input type='text' id='seller_phone_number' className='w-full p-2' placeholder='Seller Phone Number' value={invoiceData.seller_phone_number} />
             </div>
           </div>
-          <div className='py-2 flex w-full justify-center'><button className='bg-[#0e0e0e] rounded-xl px-4 py-2'>Save</button></div>
+          <div className='py-2 flex w-full justify-center'><button className='bg-[#0e0e0e] rounded-xl px-4 py-2' onClick={() => { console.log('saved') }}>Save</button></div>
         </section>
-
       }
     </div>
   )
