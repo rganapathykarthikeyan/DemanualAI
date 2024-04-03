@@ -71,50 +71,50 @@ function App() {
           <div className='flex flex-col gap-5'>
             <div className='flex flex-col w-full gap-1'>
               <label htmlFor="invoice_number" className='text-sm'>Invoice Number</label>
-              <input type='text' id='invoice_number' className='w-full p-2' placeholder='Invoice Number' value={invoiceData.invoice_number} />
+              <input type='text' id='invoice_number' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Invoice Number' value={invoiceData.invoice_number} />
             </div>
             <div className='flex flex-col w-full gap-1'>
               <label htmlFor="invoice_date" className='text-sm'>Invoice Number</label>
-              <input type='text' id='invoice_date' className='w-full p-2' placeholder='Invoice Date' value={invoiceData.invoice_date} />
+              <input type='text' id='invoice_date' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Invoice Date' value={invoiceData.invoice_date} />
             </div>
             <div className='flex flex-col w-full gap-1'>
               <label htmlFor="total_tax" className='text-sm'>Invoice Number</label>
-              <input type='text' id='total_tax' className='w-full p-2' placeholder='Total Tax' value={invoiceData.total_tax} />
+              <input type='text' id='total_tax' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Total Tax' value={invoiceData.total_tax} />
             </div>
             <div className='flex flex-col w-full gap-1'>
               <label htmlFor="invoice_amount" className='text-sm'>Invoice Number</label>
-              <input type='text' id='invoice_amount' className='w-full p-2' placeholder='Invoice Amount' value={invoiceData.invoice_amount} />
+              <input type='text' id='invoice_amount' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Invoice Amount' value={invoiceData.invoice_amount} />
             </div>
             <div className='flex flex-col w-full gap-1'>
               <label htmlFor="Items purchased" className='text-sm'>Invoice Number</label>
-              <input type='text' id='Items purchased' className='w-full p-2' placeholder='Items purchased' value={invoiceData['Items purchased']} />
+              <input type='text' id='Items purchased' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Items purchased' value={invoiceData['Items purchased']} />
             </div>
             <div className='flex flex-col w-full gap-1'>
               <label htmlFor="buyer_name" className='text-sm'>Invoice Number</label>
-              <input type='text' id='buyer_name' className='w-full p-2' placeholder='Buyer Name/Consignee' value={invoiceData.buyer_name} />
+              <input type='text' id='buyer_name' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Buyer Name/Consignee' value={invoiceData.buyer_name} />
             </div>
             <div className='flex flex-col w-full gap-1'>
               <label htmlFor="buyer_address" className='text-sm'>Invoice Number</label>
-              <input type='text' id='buyer_address' className='w-full p-2' placeholder='Buyer Address' value={invoiceData.buyer_address} />
+              <input type='text' id='buyer_address' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Buyer Address' value={invoiceData.buyer_address} />
             </div>
             <div className='flex flex-col w-full gap-1'>
               <label htmlFor="buyer_phone_number" className='text-sm'>Invoice Number</label>
-              <input type='text' id='buyer_phone_number' className='w-full p-2' placeholder='Buyer Phone Number' value={invoiceData.buyer_phone_number} />
+              <input type='text' id='buyer_phone_number' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Buyer Phone Number' value={invoiceData.buyer_phone_number} />
             </div>
             <div className='flex flex-col w-full gap-1'>
               <label htmlFor="seller_name" className='text-sm'>Invoice Number</label>
-              <input type='text' id='seller_name' className='w-full p-2' placeholder='Seller Name' value={invoiceData.seller_name} />
+              <input type='text' id='seller_name' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Seller Name' value={invoiceData.seller_name} />
             </div>
             <div className='flex flex-col w-full gap-1'>
               <label htmlFor="seller_address" className='text-sm'>Invoice Number</label>
-              <input type='text' id='seller_address' className='w-full p-2' placeholder='Seller Address' value={invoiceData.seller_address} />
+              <input type='text' id='seller_address' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Seller Address' value={invoiceData.seller_address} />
             </div>
             <div className='flex flex-col w-full gap-1'>
               <label htmlFor="seller_phone_number" className='text-sm'>Invoice Number</label>
-              <input type='text' id='seller_phone_number' className='w-full p-2' placeholder='Seller Phone Number' value={invoiceData.seller_phone_number} />
+              <input type='text' id='seller_phone_number' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Seller Phone Number' value={invoiceData.seller_phone_number} />
             </div>
           </div>
-          <div className='py-2 flex w-full justify-center'><button className='bg-[#0e0e0e] rounded-xl px-4 py-2' onClick={() => { console.log('saved') }}>Save</button></div>
+          <div className='py-6 flex w-full justify-center'><button className='bg-[#0e0e0e] hover:bg-black rounded-xl px-6 py-3 text-2xl font-bold font-mono' onClick={() => { console.log('saved') }}>Save</button></div>
         </section>
       }
     </div>
