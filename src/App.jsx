@@ -74,43 +74,43 @@ function App() {
               <input type='text' id='invoice_number' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Invoice Number' value={invoiceData.invoice_number} />
             </div>
             <div className='flex flex-col w-full gap-1'>
-              <label htmlFor="invoice_date" className='text-sm'>Invoice Number</label>
+              <label htmlFor="invoice_date" className='text-sm'>Invoice Date</label>
               <input type='text' id='invoice_date' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Invoice Date' value={invoiceData.invoice_date} />
             </div>
             <div className='flex flex-col w-full gap-1'>
-              <label htmlFor="total_tax" className='text-sm'>Invoice Number</label>
+              <label htmlFor="total_tax" className='text-sm'>Total Tax</label>
               <input type='text' id='total_tax' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Total Tax' value={invoiceData.total_tax} />
             </div>
             <div className='flex flex-col w-full gap-1'>
-              <label htmlFor="invoice_amount" className='text-sm'>Invoice Number</label>
+              <label htmlFor="invoice_amount" className='text-sm'>Invoice Amount</label>
               <input type='text' id='invoice_amount' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Invoice Amount' value={invoiceData.invoice_amount} />
             </div>
             <div className='flex flex-col w-full gap-1'>
-              <label htmlFor="Items purchased" className='text-sm'>Invoice Number</label>
+              <label htmlFor="Items purchased" className='text-sm'>Items purchased</label>
               <input type='text' id='Items purchased' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Items purchased' value={invoiceData['Items purchased']} />
             </div>
             <div className='flex flex-col w-full gap-1'>
-              <label htmlFor="buyer_name" className='text-sm'>Invoice Number</label>
+              <label htmlFor="buyer_name" className='text-sm'>Buyer Name/Consignee</label>
               <input type='text' id='buyer_name' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Buyer Name/Consignee' value={invoiceData.buyer_name} />
             </div>
             <div className='flex flex-col w-full gap-1'>
-              <label htmlFor="buyer_address" className='text-sm'>Invoice Number</label>
+              <label htmlFor="buyer_address" className='text-sm'>Buyer Address</label>
               <input type='text' id='buyer_address' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Buyer Address' value={invoiceData.buyer_address} />
             </div>
             <div className='flex flex-col w-full gap-1'>
-              <label htmlFor="buyer_phone_number" className='text-sm'>Invoice Number</label>
+              <label htmlFor="buyer_phone_number" className='text-sm'>Buyer Phone Number</label>
               <input type='text' id='buyer_phone_number' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Buyer Phone Number' value={invoiceData.buyer_phone_number} />
             </div>
             <div className='flex flex-col w-full gap-1'>
-              <label htmlFor="seller_name" className='text-sm'>Invoice Number</label>
+              <label htmlFor="seller_name" className='text-sm'>Seller Name</label>
               <input type='text' id='seller_name' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Seller Name' value={invoiceData.seller_name} />
             </div>
             <div className='flex flex-col w-full gap-1'>
-              <label htmlFor="seller_address" className='text-sm'>Invoice Number</label>
+              <label htmlFor="seller_address" className='text-sm'>Seller Address</label>
               <input type='text' id='seller_address' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Seller Address' value={invoiceData.seller_address} />
             </div>
             <div className='flex flex-col w-full gap-1'>
-              <label htmlFor="seller_phone_number" className='text-sm'>Invoice Number</label>
+              <label htmlFor="seller_phone_number" className='text-sm'>Seller Phone Number</label>
               <input type='text' id='seller_phone_number' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Seller Phone Number' value={invoiceData.seller_phone_number} />
             </div>
           </div>
