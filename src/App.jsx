@@ -33,6 +33,10 @@ function App() {
     }
   }
 
+  const clear = () => {
+    setInvoiceData(null)
+  }
+
 
   return (
     <div className='h-screen w-screen'>
@@ -114,7 +118,10 @@ function App() {
               <input type='text' id='seller_phone_number' className='w-full p-2 bg-[#3b3b3b] text-[#f9f9f9] placeholder:text-[#f9f9f9]' placeholder='Seller Phone Number' value={invoiceData.seller_phone_number} />
             </div>
           </div>
-          <div className='py-6 flex w-full justify-center'><button className='bg-[#0e0e0e] hover:bg-black rounded-xl px-6 py-3 text-2xl font-bold font-mono' onClick={() => { console.log('saved') }}>Save</button></div>
+          <div className='py-6 flex flex-row w-full justify-center gap-10'>
+            <button className='bg-[#0e0e0e] hover:bg-black rounded-xl px-6 py-3 text-2xl font-bold font-mono' onClick={clear}>Clear</button>
+            <button className='bg-[#0e0e0e] hover:bg-black rounded-xl px-6 py-3 text-2xl font-bold font-mono' onClick={() => { console.log('saved') }}>Save</button>
+          </div>
         </section>
       }
     </div>
