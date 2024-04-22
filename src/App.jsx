@@ -24,7 +24,7 @@ function App() {
       setIsLoading(true);
       const fd = new FormData();
       fd.append('file', file);
-      let response = await fetch('http://13.126.100.8:8000/parse_invoice_ocr/', { method: 'POST', body: fd })
+      let response = await fetch('http://3.108.55.122:8000/parse_invoice_ocr/', { method: 'POST', body: fd })
       let res = await response.json()
       setInvoiceData(res)
     }
