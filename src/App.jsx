@@ -24,7 +24,7 @@ function App() {
       setIsLoading(true);
       const fd = new FormData();
       fd.append('file', file);
-      let response = await fetch('http://3.108.55.122:8000/parse_invoice_ocr/', { method: 'POST', body: fd })
+      let response = await fetch('https://3.108.55.122:8000/parse_invoice_ocr/', { method: 'POST', body: fd })
       let res = await response.json()
       setInvoiceData(res)
     }
@@ -42,7 +42,7 @@ function App() {
 
   // console.log(invoiceData && typeof invoiceData['Items purchased'])
 
-  // const invoiceData1 = {
+  // const invoiceData = {
   //   invoice_number: '132165',
   //   invoice_date: '12/25/2024',
   //   total_tax: '123654',
@@ -53,30 +53,30 @@ function App() {
   //   seller_name: 'Sell',
   //   seller_address: 'DubaiMainRoad',
   //   seller_phone_number: 'asdf',
-  // 'Items purchased': 'data'
-  // 'Items purchased': {
-  //   item_name: 'chalk',
-  //   tax: '135',
-  //   amount: '65497',
-  //   quantitiy: '1'
-  // }
-  // 'Items purchased': [{
-  //   item_name: 'chalk',
-  //   tax: '135',
-  //   amount: '65497',
-  //   quantitiy: '1'
-  // }, {
-  //   item_name: 'bus',
-  //   tax: '135',
-  //   amount: '625497',
-  //   quantitiy: '1'
-  // }, {
-  //   item_name: 'water',
-  //   tax: '13',
-  //   amount: '6497',
-  //   quantitiy: '12'
-  // }]
-  // 'Items purchased': ['asdf', 'bwe', 'qhenre']
+  //   'Items purchased': 'data'
+  //   'Items purchased': {
+  //     item_name: 'chalk',
+  //     tax: '135',
+  //     amount: '65497',
+  //     quantitiy: '1'
+  //   }
+  //   'Items purchased': [{
+  //     item_name: 'chalk',
+  //     tax: '135',
+  //     amount: '65497',
+  //     quantitiy: '1'
+  //   }, {
+  //     item_name: 'bus',
+  //     tax: '135',
+  //     amount: '625497',
+  //     quantitiy: '1'
+  //   }, {
+  //     item_name: 'water',
+  //     tax: '13',
+  //     amount: '6497',
+  //     quantitiy: '12'
+  //   }]
+  //   'Items purchased': ['asdf', 'bwe', 'qhenre']
   // }
 
   return (
@@ -120,11 +120,11 @@ function App() {
         invoiceData !== null &&
         <section className=' sm:p-10 p-4'>
           <h1 className='text-4xl font-bold text-center p-6 text-[#733BDB]'>Invoice Details</h1>
-          <div className='flex flex-col gap-5'>
+          <div className='flex flex-col gap-12'>
 
             <section className='flex flex-col md:flex-row md:gap-3'>
               <section className='flex flex-col md:flex-row gap-3 justify-between w-full'>
-                <div>
+                <div className='flex flex-col gap-5'>
                   <div className='flex flex-col w-full gap-1'>
                     <label htmlFor="invoice_number" className='text-sm text-[#3b3b3b]'>Invoice Number</label>
                     <input type='text' id='invoice_number' className='w-full p-2 bg-[#f9f9f9] border-b border-[#3b3b3b] text-[#3b3b3b] placeholder:text-[#3b3b3b]' placeholder='Invoice Number' value={invoiceData.invoice_number} />
@@ -134,7 +134,7 @@ function App() {
                     <input type='text' id='invoice_date' className='w-full p-2 bg-[#f9f9f9] border-b border-[#3b3b3b] text-[#3b3b3b] placeholder:text-[#3b3b3b]' placeholder='Invoice Date' value={invoiceData.invoice_date} />
                   </div>
                 </div>
-                <div>
+                <div className='flex flex-col gap-5'>
                   <div className='flex flex-col w-full gap-1'>
                     <label htmlFor="total_tax" className='text-sm text-[#3b3b3b]'>Total Tax</label>
                     <input type='text' id='total_tax' className='w-full p-2 bg-[#f9f9f9] border-b border-[#3b3b3b] text-[#3b3b3b] placeholder:text-[#3b3b3b]' placeholder='Total Tax' value={invoiceData.total_tax} />
@@ -146,7 +146,7 @@ function App() {
                 </div>
               </section>
             </section>
-            <section className='flex flex-col md:flex-row md:gap-3'>
+            <section className='flex flex-col md:flex-row md:gap-10'>
               <div className='flex flex-grow flex-col'>
                 <h4 className='text-[#733BDB] font-light font-mono text-lg'>Buyer Details</h4>
                 <section className='flex flex-grow flex-col p-2 border-slate-400 border rounded-md shadow-lg'>
@@ -224,9 +224,9 @@ function App() {
             <button className='bg-[#733BDB] hover:bg-[#673eb3] rounded-xl px-6 py-3 text-2xl font-bold font-mono' onClick={clear}>Clear</button>
             <button className='bg-[#733BDB] hover:bg-[#673eb3] rounded-xl px-6 py-3 text-2xl font-bold font-mono' onClick={() => { console.log('saved') }}>Save</button>
           </div>
-        </section>
+        </section >
       }
-    </div>
+    </div >
   )
 }
 
