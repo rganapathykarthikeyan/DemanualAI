@@ -152,7 +152,7 @@ function App() {
                 <section className='flex flex-grow flex-col p-2 border-slate-400 border rounded-md shadow-lg'>
                   <div className='flex flex-col w-full gap-1'>
                     <label htmlFor="buyer_name" className='text-sm text-[#3b3b3b]'>Buyer Name/Consignee</label>
-                    <input type='text' id='buyer_name' className='w-full p-2 bg-[#f9f9f9] border-b border-[#3b3b3b] text-[#3b3b3b] placeholder:text-[#3b3b3b]' placeholder='Buyer Name/Consignee' value={invoiceData.buyer_name} />
+                    <input type='text' id='buyer_name' className='w-full p-2 bg-[#f9f9f9] border-b border-[#3b3b3b] text-[#3b3b3b] placeholder:text-[#3b3b3b]' placeholder='Buyer Name/Consignee' value={invoiceData['buyer_name/Consignee']} />
                   </div>
                   <div className='flex flex-col w-full gap-1'>
                     <label htmlFor="buyer_address" className='text-sm text-[#3b3b3b]'>Buyer Address</label>
